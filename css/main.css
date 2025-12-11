@@ -127,13 +127,11 @@ html, body {
 .menucon {
     display: none;
     position: absolute;
-    left: 0.5rem;
-    top: 53px;
+    top: 45px;
     height: 0;
     width: 200px;
     background: #fff;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -705,24 +703,41 @@ html, body {
     .ho-tro .text-content p {
         display: none;
     }
-
-    .tin-tuc {
-        flex-wrap: wrap;
-    }
-    .banner {
+    
+    .tin-tuc, .cau-long-moi {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
     }
-    .banner img {
+
+    .banner, .banner2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .banner img, .banner2 img {
         width: 100%;
         height: auto;
+        object-fit: contain;
     }
-    .text-tt {
-        margin-left: 10px;
-        margin-right: 10px;
+
+    .text-tt, .text-tt2 {
+        width: 100%; 
+        margin: 0;
+        padding: 15px;
+        box-sizing: border-box;
         text-align: center;
+    }
+
+    .text-tt2 {
+        padding-top: 20px;
+    }
+
+    .text-tt .text-2 {
+        display: block;
     }
     .tin-tuc .text-tt .text-2{
         display: none;
