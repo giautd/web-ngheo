@@ -1,3 +1,11 @@
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Khóa chặt chiều ngang, cấm mọi thanh cuộn ngang */
+    margin: 0;
+    padding: 0;
+}
+
 .menu {
     position: absolute;
     top: 0;
@@ -8,11 +16,7 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
 
 /* LOGO */
@@ -72,7 +76,7 @@ body {
 
 .tim-kiem i {
     position: absolute;
-    left: 230px;
+    right: -50px;
     color: #333;
 }
 
@@ -195,7 +199,7 @@ body {
 
 /* PHẦN ẢNH ĐỘNG */
 .slide-show {
-    width: 1521px;
+    width: 100%;
     max-width: 100vw;
     height: 700px;
     margin: auto;
@@ -215,7 +219,7 @@ body {
 }
 
 .list-images img {
-    width: 1521px;
+    width: 100%;
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -341,21 +345,23 @@ body {
 
 .tin-tuc {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .banner {
-    padding: 20px 140px;
+    padding: 20px 10px;
+    display: flex;
 }
 
 .banner img {
-    width: 600px;
-    height: auto;
+    width: 100%;
+    height: 300px;
     object-fit: contain;
 }
 
 .text-tt {
-    margin-left: 100px;
-    margin-right: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .click {
@@ -384,21 +390,22 @@ body {
 
 .cau-long-moi {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .text-tt2 {
-    margin-left: 200px;
-    margin-right: 70px;
-    padding-top: 150px;
+    margin-left: 10%;
+    padding-top: 140px;
 }
 
 .banner2 {
     padding: 20px 0;
+    display: flex;
 }
 
 .banner2 img {
-    width: 1000px;
-    height: auto;
+    width: 100%;
+    height: 600px;
     object-fit: contain;
 }
 
@@ -428,12 +435,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     padding: 10px;
     background-color: #fff;
 }
 
 .san-pham{
+    margin: 15px;
     position: relative;
     width: 220px;
     text-align: center;
@@ -505,10 +512,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
 }
 
 .card {
+    margin: 20px;
     width: 280px;
     background: #fff;
     overflow: hidden;
@@ -590,13 +597,15 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    gap: 40px;
     padding: 110px;
 }
 
 .thong-tin-chung {
     flex: 1;
+    margin: 10px;
     min-width: 220px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .thong-tin-chung ul li a {
@@ -604,6 +613,15 @@ body {
     text-decoration: none;
 }
 
+.title-thong-tin{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.thong-tin-chung b {
+    color: red;
+}
 
 
 /* RESPONSIVE MOBILE*/
